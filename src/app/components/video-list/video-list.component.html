@@ -1,0 +1,8 @@
+<div class="row">
+  <app-file-uploader></app-file-uploader>
+</div>
+<div class="row">
+  <div class="col-3" *ngFor="let item of item$ | async">
+    <app-video-tmpl [item]="item"></app-video-tmpl>
+  </div>
+</div>

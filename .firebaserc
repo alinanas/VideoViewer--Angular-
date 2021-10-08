@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "acg-sfb-4581d": {
+      "hosting": {
+        "VideoViewer": [
+          "acg-sfb-4581d"
+        ]
+      }
+    }
+  }
+}

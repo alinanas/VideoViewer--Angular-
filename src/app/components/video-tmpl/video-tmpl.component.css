@@ -1,0 +1,8 @@
+.video-card {
+  background-color: #000;
+  padding: 20px 10px 20px 10px;
+  box-shadow: #111 1px 1px 10px;
+  margin-bottom: 30px;
+  height: 215px;
+  cursor: pointer;
+}

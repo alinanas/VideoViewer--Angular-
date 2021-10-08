@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="form-group" style="text-align: center;">
+    <label for="file" class="btn" [class]="isLoading ? 'btn-info' : 'btn-primary'"
+      style="margin: 20px 0; width:150px;">Upload video</label>
+    <input type="file"
+          id="file"
+          (change)="handleFileInput($event.target.files)"
+          [hidden]="true"
+          [disabled]="isLoading">
+    <span *ngIf="errorMessage" class="text-danger">{{errorMessage}}</span>
+    <span *ngIf="isLoading">File is uploading...</span>
+  </div>
+</div>

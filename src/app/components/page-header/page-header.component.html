@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <span class="navbar-brand">
+      Enjoy Video 24 hours
+    </span>
+
+    <div class="d-flex">
+      <app-login-button *ngIf="(auth.isAuthenticated$ | async) === false"></app-login-button>
+      <app-logout-button *ngIf="auth.isAuthenticated$ | async"></app-logout-button>
+    </div>
+  </div>
+</nav>
